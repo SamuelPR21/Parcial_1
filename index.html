@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Funcionalidades.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="Estructura.css">
+
+    <title>WEB_NOTICIAS</title>
+</head>
+<body>
+    <h1> Revista Noticia</h1>
+    <nav>
+        <ul>
+            <li>Noticias</li>
+            <li> <a href="menu_admi.html" target="_blank">Administrador</a></li>
+            <li>Sing up</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+
+    <div class="grid-container">
+        <div class="news-card">
+            <h3>Noticia Economia</h3>
+            <strong><p>Para el mes de enero de 2024 el Indicador de Seguimiento a la Economía (ISE) se ubicó en 114,39, lo que representó un crecimiento de 1,60 % respecto al mes de enero de 2023 (112,59), según lo reportado por el Departamento Administrativo Nacional de Estadística (DANE).</p></strong>
+            <img src="econo.jpeg" alt="Imagen de econimia">
+            <br>
+            <button onclick="Noti_Econommia()">Leer Completa</button>
+        </div>
+        
+        <div class="news-card">
+            <h3>Noticia Politica</h3>
+            <strong><p>El presidente insiste en que tiene que convocarse este mecanismo que ha abierto dudas y generado polémica. Hizo énfasis en que, de cualquier forma, no busca cambiar la Constitución de 1991 ni quedarse en poder más allá de su mandato actual.</p></strong>
+            <img src="poli.jpeg" alt="Imagen de Politica">
+            <br>
+            <button onclick="Noti_Politica()">Leer Completa</button>
+        </div>
+        <div class="news-card">
+            <h3>Noticia Deportes</h3>
+            <strong><p>Primera B, Suramericano Sub-17 femenino, NBA</p></strong>
+            <img src="depor.jpeg" alt="Imagen de Deportes">
+            <br>
+            <button onclick="Noti_deportes()">Leer Completa</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2> Otras Paginas de Noticias</h2>
+    <div class="container">
+        <div class="section">
+            <h3>Nacionales</h3>
+            <h4 class="city" onclick="mostrarLista(this)">🔽 Bogotá</h4>
+                <ul class="lista-bogota" style="display: none;">
+                    <li><a href="https://www.eltiempo.com" target="_blank">El Tiempo</a></li>
+                    <li><a href="https://www.elespectador.com" target="_blank">El Espectador</a></li>
+                </ul>
+            <h4 class="city" onclick="mostrarLista(this)"> 🔽 Neiva</h4>
+                <ul class="lista-bogota" style="display: none;">
+                    <li><a href="https://diariodelhuila.com" target="_blank">Diario del Huila</a></li>
+                    <li><a href="https://www.lanacion.com.co" target="_blank">La Nacion</a></li>
+                </ul>
+        </div>
+        <div class="section">
+            <h3>Internacionales</h3>
+            <h4 class="city" onclick="mostrarLista(this)"> 🔽New York</h4>
+                <ul class="lista-bogota" style="display: none;">
+                    <li><a href="https://www.nytimes.com/es/" target="_blank">New York Times</a></li>
+                </ul>
+            <h4 class="city" onclick="mostrarLista(this)" > 🔽Londres</h4>
+                <ul class="lista-bogota" style="display: none;">
+                    <li><a href="https://www.independent.co.uk" target="_blank">THE INDEPENDENT</a></li>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>

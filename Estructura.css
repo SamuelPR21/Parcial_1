@@ -1,0 +1,116 @@
+
+/*Estilo cool h1*/
+h1{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: rgb(31, 31, 69); /* Color del texto blanco */
+
+}
+
+/*MENU PRINCIPAL*/
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    background-color:#4CAF50;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+nav li:last-child {
+    margin-right: 0; 
+}
+
+
+/*Cartas de noticias*/
+h3{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: green;
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgb(169, 171, 170);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Esto centrará verticalmente los elementos y dejará espacio entre ellos */
+    height: 100%;
+    /* Estilos para los párrafos */
+    p {
+        border: 1px solid #4b6791; 
+        padding: 10px; 
+        border-radius: 5px; 
+    }
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-card button {
+    align-self: center; 
+}
+/* Estilos para los botones */
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+button:focus {
+    outline: none; 
+}
+
+/*Otras Noticias*/
+.container {
+    display: flex;
+    border: 1px solid #000000
+}
+
+.section {
+    flex: 1;
+    margin-right: 20px; /* Ajusta el margen entre las secciones */
+}
+
+h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 35px;  
+    color:#4b6791
+}
+
+h4{
+    text-align: center;
+    font-family: sans-serif ;
+    font-size: 20px;
+    color: rgb(19, 97, 19);
+    font-style: italic; 
+}
